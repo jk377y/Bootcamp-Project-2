@@ -1,0 +1,20 @@
+<div class="flex flex-col justify-center items-center text-center myCard">
+	<img src="/images/{{image}}" alt="" class="w-40 h-40 mt-5">
+	<div class="m-3 font-semibold">
+		<h1 class="text-lg font-bold">{{name}}</h1>
+		<p>{{category.name}}</p>
+		<p>Calories: {{calories}}</p>
+		<p>Protein: {{protein}}</p>
+		<p>Fat: {{fat}}</p>
+		<p>Carbs: {{carbs}}</p>
+
+	</div>
+	<div class="flex flex-row">
+		<button id="prevFood" class="bg-green-400 myBtn w-40 m-2">Previous Food</button>
+		<button id="nextFood" class="bg-green-400 myBtn w-40 my-2">Next Food</button>
+	</div>
+	<div>
+		<button id="backToList" class="bg-green-400 myBtn w-40 mt-2 mb-5">Back to Food List</button>
+	</div>
+</div>
+<script src="/js/script.js"></script>
