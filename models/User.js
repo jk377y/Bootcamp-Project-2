@@ -32,7 +32,7 @@ User.init(// initialize the User model by calling the init() method on the User 
 			type: DataTypes.STRING,
 			allowNull: false,
 			validate: {
-				len: [6],
+				len: [6],// the password must be at least 6 characters long
 			},
 		},
 	},

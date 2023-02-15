@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inputBox {
+	border: 3px inset rgb(75, 75, 75);
+	border-radius: 10px;
+	padding: 2px 5px;
+	color: black;
+}
+
+.myBtn {
+	border: 3px solid rgb(0, 0, 0);
+	border-radius: 10px;
+	padding: 2px 5px;
+	color: black;
+}
+
+.myBtn:hover {
+	border: 3px inset yellow;
+}
+
+.myCard {
+	background-color: rgba(0, 191, 255, 0.671);
+	border: 3px solid rgb(0, 0, 0);
+	border-radius: 10px;
+	padding: 2px 5px;
+	color: black;
+	box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.562);
+}
+
+@media only screen and (max-width: 768px) {
+	.loginDiv {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.myCard {
+		margin: 2rem 1rem;
+	}
+}
+
+.myLink:hover {
+	color: yellow;
+}

@@ -1,8 +1,8 @@
 // custom js for the navigation buttons on the food page
-const prevFoodButton = document.getElementById("prevFood");// get the prev button element
-const nextFoodButton = document.getElementById("nextFood");// get the next button element
-const backToListButton = document.getElementById("backToList");// get the back to list button element
-const currentFoodId = parseInt(window.location.pathname.split("/")[2]);// get the current food id from the url
+const prevFoodButton = document.getElementById('prevFood');// get the prev button element
+const nextFoodButton = document.getElementById('nextFood');// get the next button element
+const backToListButton = document.getElementById('backToList');// get the back to list button element
+const currentFoodId = parseInt(window.location.pathname.split('/')[3]);// get the current food id from the url
 const maxFoodId = 15;// set the max food id to the total number of foods in the database
 const minFoodId = 1;// set the min food id to 1 because the food ids start at 1 for the purposes of a later function
 
@@ -31,6 +31,6 @@ function navigateToFoodList() {
 	location.href = `/api/food`; // navigate to the food list using the food root url
 }
 
-prevFoodButton.addEventListener("click", navigateToPrevFood);// add event listeners to the prevFood button
-nextFoodButton.addEventListener("click", navigateToNextFood);// add event listeners to the nextFood button
-backToListButton.addEventListener("click", navigateToFoodList);// add event listeners to the backToList button
+prevFoodButton.addEventListener('click', navigateToPrevFood);// add event listeners to the prevFood button
+nextFoodButton.addEventListener('click', navigateToNextFood);// add event listeners to the nextFood button
+backToListButton.addEventListener('click', navigateToFoodList);// add event listeners to the backToList button

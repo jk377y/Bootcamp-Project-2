@@ -35,20 +35,20 @@ Food.init(// initialize the Food model by calling the init() method on the Food 
 			type: DataTypes.STRING,
 			allowNull: false,
 		},
-		categoryId: {
+		categoryId: {// define the categoryId column with the following properties
 			type: DataTypes.INTEGER,
-			references: {
-			  model: 'category',
-			  key: 'id',
+			references: {// This sets up the relationship between the Food and Category models
+			  model: 'category',// This tells the Food model that the categoryId column references the Category model
+			  key: 'id',// This tells the Food model that the categoryId column references the id column in the Category model
 			},
 		},
 	},
 	{
-		sequelize,
+		sequelize,// This tells the Food model that it uses the sequelize connection
 		freezeTableName: true,
 		underscored: false,
 		modelName: 'food',
 	}
 );
 
-module.exports = Food;
+module.exports = Food;// export the Food model

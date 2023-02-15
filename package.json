@@ -1,12 +1,13 @@
 {
-  "name": "f4t",
+  "name": "f4t_db",
   "version": "1.0.1",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "seed": "node seeds/index.js",
-    "tailwind": "npx tailwindcss -i input.css -o ./public/css/style.css --watch"
+    "tailwind": "npx tailwindcss -i input.css -o ./public/css/style.css --watch",
+    "dev": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,5 +24,9 @@
   },
   "engines": {
     "node": "18.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "tailwindcss": "^3.2.6"
   }
 }
