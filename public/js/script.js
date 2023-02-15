@@ -2,7 +2,7 @@
 const prevFoodButton = document.getElementById("prevFood");// get the prev button element
 const nextFoodButton = document.getElementById("nextFood");// get the next button element
 const backToListButton = document.getElementById("backToList");// get the back to list button element
-const currentFoodId = parseInt(window.location.pathname.split("/")[3]);// get the current food id from the url
+const currentFoodId = parseInt(window.location.pathname.split("/")[2]);// get the current food id from the url
 const maxFoodId = 15;// set the max food id to the total number of foods in the database
 const minFoodId = 1;// set the min food id to 1 because the food ids start at 1 for the purposes of a later function
 
